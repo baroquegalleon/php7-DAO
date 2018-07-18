@@ -13,7 +13,7 @@ class Sql extends PDO{ //PDO é uma classe naiva do php
 
 		foreach ($parameters as $key => $value) {
 			
-			$this->serParam($key,$value);
+			$this->setParam($statement,$key,$value);
 		}
 	}
 
